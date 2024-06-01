@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO WEBSITE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!------------------------------font awesome link----------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!---------------------google font link---------------------------------->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700;800;900&family=Roboto:wght@500&display=swap" 
+    rel="stylesheet">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav class="navbar">
+            <div class="logo"><h3>Portfolio.</h3></div>
+           <ul id="sidemenu">
+                <li><a href="#header" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#certifications">Certificates</a></li>
+                <li><a href="#services">Services</a></li>
+                
+                <li><a href="#project">Projects</a></li>
+               
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <section>
+            <div class="header-text">
+                <h1>Hi! there<br>It's me, Reetika Gupta<br>I'm <span class="multiple-text"></span></h1>
+                <p>passionate about creating and designing websites with great user experiences and many more...</p>
+                <div class="home-sci">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <div class="btn-groups">
+              <a href="#about">More about me</a>
+            </div>
+            </div>
+            <div class="header-right">
+            <div class="col2">
+                <div class="content">
+                <img src="reetu.jpeg" alt="image" class="home__img">
+            </div>
+            </div>
+            </section>
+    </div>
+</div>
+<!-------------------------about----------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="reetu.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About<Span>Me</Span></h1>
+                <p>Hello there! <br>I'm Reetika Gupta, and I'm thrilled to welcome you to my corner of the web.
+                     I am currently pursuing my Bachelor's degree in Engineering (B.Tech) at Kanpur Institute of Technology.
+                      With a keen interest in technology and a passion for software development beyond my studies, 
+                      I have been constantly expanding my skills and knowledge in various web development
+                       technologies. I'm constantly exploring new frameworks and tools to stay up to date
+                        with the latest trends in the industry.</p>
+
+                     <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                     </div>
+                     <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programing Language:</span><br>Python,C,C++,Java</li>
+                            <li><span>Database:</span><br>MYSQL, DBMS</li>
+                            <li><span>Web Tools:</span><br>Html,Css,Javascript,Bootstrap5,React</li>
+                            <li><span>Data structures and algorithms and OOPs</span></li>
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2018-2019:</span><br>High School from<br>Air Force School,Kanpur<br>with 95.8%</li>
+                            <li><span>2020-2021:</span><br>Intermediate School from<br>Air Force School,Kanpur<br>with 95.2%</li>
+                            <li><span>2021-2025:</span><br>Bachelor of Computer Science from<br>Kanpur Institute of Technology</li>
+    
+                        </ul>
+                     </div>
+                     <a href="#" class="btn">Read More</a>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -------------------------certification----------------------> 
+<div id="certifications">
+    <div class="container">
+        <h1 class="sub-titles">C<span>ertifications</span></h1>
+        <div class="certificate-list">
+            <div class="cert">
+                <img src="sql.jpeg">
+            <div class="layer">
+                <h2>SQL</h2>
+                <p>Hackerrank skill certficate of completion</p>
+            </div>
+        </div>
+        <div class="cert">
+            <img src="forage.jpeg">
+            <div class="layer">
+                <h2>Software engineering virtual programme</h2>
+                <p>by JP Morgan chase and co.</p>
+            </div>
+        </div>
+        <div class="cert">
+            <img src="codingninja.jpeg">
+            <div class="layer">
+                <h2>Coding challenge in Bits </h2>
+                <p>by IEEE DTU , Coding Ninja</p>
+            </div>
+            </div>
+            </div>
+            <div class="certificate-list">
+                <div class="cert">
+                    <img src="coursera.jpeg">
+                <div class="layer">
+                    <h2>Object Oriented Programming Concepts</h2>
+                    <p>by Coursera</p>
+                </div>
+            </div>
+            <div class="cert">
+                <img src="octanet.jpeg">
+                <div class="layer">
+                    <h2>Web development virtual internship</h2>
+                    <p>by Octanet Software Servces</p>
+                </div>
+            </div>
+            <div class="cert">
+                <img src="flipkart.jpeg">
+                <div class="layer">
+                    <h2>Fipkart Grid 5.0 </h2>
+                    <p>by Flipkart for software development</p>
+                </div>
+                </div>
+                </div>
+        </div>
+        </div>
+    </div>
+</div>
+<!-------------------------services-----------------------> 
+<div id="services">
+    <div class="container">
+        <h1 class="sub-titles">My<span>Services</span></h1>
+        <div class="service-list">
+            <div>
+                <i class="fa-solid fa-c"></i>
+                <br><h2>language</h2>
+            </div>
+            <div>
+
+                <h1>C++</h1>
+                <br><h2>language</h2>
+            </div>
+            <div>
+                <i class="fa-brands fa-python"></i>
+                <h2>Python</h2>
+            </div>
+            <div>
+                <i class="fa-brands fa-java"></i>
+                <h2>Java</h2>
+            </div>
+            <div class="sql">
+
+                <h2 class="sq">My <br>SQL</h2>
+            </div>
+            <div>
+                <i class="fa-brands fa-html5"></i>
+                <h2>Html</h2>
+            </div>
+            <div>
+                <i class="fa-brands fa-css3-alt"></i>
+                <h2>Css</h2>
+            </div>
+            <div>
+                <i class="fa-brands fa-square-js"></i>
+                <h2>Javascript</h2>
+            </div>
+            <div class="sql">
+                <h2 class="sq">OOPs</h2>
+            </div>
+            <div>
+                <i class="fa-brands fa-react"></i>
+                <h2>React</h2>
+            </div>
+            <div>
+                <h2>Data Structures</h2>
+            </div>
+        </div>
+    </div>
+
+<!----------------------project------------------>
+<div id="project">
+    <div class="container">
+        <h1 class="sub-titles">My<span>Projects</span></h1>
+        <div class="project-list">
+            <div class="proj">
+                <img src="portfolio.png">
+                <div class="layer">
+                    <h2>Portfolio website</h2>
+                    <p>This is my official portfolio that provides necessary details about
+                         my education,skills,certifications and all the necessary projects made by me.
+                        </p>
+                </div>
+            </div>
+            <div class="proj">
+                <img src="caride.jpeg">
+                <div class="layer">
+                    <h2>Book my ride</h2>
+                    <p> This is an automobile booking site where
+                         customers can book their ride wth zero commission.This project 
+                         aims at offering the best of all services to the customer in need.
+                         This can be done online.</p>
+                </div>
+            </div>
+            <div class="proj">
+                <img src="examportal.jpeg">
+                <div class="layer">
+                    <h2>Examshala portal</h2>
+                    <p>Examshala provides multiple resources and other required study materials
+                         to the students that help them to fulfill their requirements 
+                         in just one click of a page.It includes academic as well as
+                          other competitive exam materials with placement preperation stuffs. 
+                    </p>
+                </div>
+            </div>
+            </div>
+            <div class="project-list">
+                <div class="proj">
+                    <img src="netflix.png">
+                    <div class="layer">
+                        <h2>Netflix clone</h2>
+                        <p> a Netflix clone website to replicate the user experience of the popular streaming
+                             platform, with features like user registration, movie catalog, streaming, search, and responsive design.
+                            </p>
+                    </div>
+                </div>
+                <div class="proj">
+                    <img src="travel.png">
+                    <div class="layer">
+                        <h2>Travel and Tour website</h2>
+                        <p> Wanderquip.com is a booking site where
+                             customers can book their world tour.This project 
+                             aims at offering the best of all services to the customer in need.
+                            </p>
+                    </div>
+                </div>
+                <div class="proj">
+                    <img src="list.png">
+                    <div class="layer">
+                        <h2>To-do-list</h2>
+                        <p>desin a simple user-friendly to-do-list project
+                             for listing of different task completion by user.
+                        </p>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </div>
+</div>
+<!-- ----------------------contact----------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact<span>Me</span></h1>
+                <p><i class="fa-solid fa-paper-plane"></i>reetikagupta08@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>9696239780</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/jerome.aushlin/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://instagram.com/jerome_luviee?igshid=MzNlNGNkZWQ4Mg=="><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/jerome-aushlin-s-b65227206"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/resume (2).pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+ <!--------------------------footer section-------------------> 
+ <footer class="footer">
+    <div class="footer-text">
+        <p>Copyright © portfolio. Made with <i class="fa-solid fa-heart"></i> by Reetika Gupta || All rights are reserved.</p>
+    </div>
+    <div class="footer-iconTop">
+        <a href="#header"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+   </footer>  
+</body>
+</html>
+<!------------------------- Scroll reveal --------------------------->
+<script src="https://unpkg.com/scrollreveal"></script>
+ <!----------------------------typed js ------------------------------->
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
